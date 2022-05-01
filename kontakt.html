@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css?family=Poppins"
       rel="stylesheet"
     />
+    <script src="script.js" defer></script>
   </head>
 
   <body>
@@ -29,14 +30,25 @@
       <div class="vänster">
         <h1 class="title">Kom i kontakt</h1>
         <p class="bodytext">Albin Johansson 0704199790 aljo940616@gmail.com</p>
-        <div class="inputcontainer">
+        <form
+          class="inputcontainer"
+          name="contact"
+          method="POST"
+          data-netlify="true"
+        >
           <input
             type="text"
             class="kontaktardig"
             placeholder="mobilnummer eller mailadress..."
           />
-          <img tabindex="0" class="raket" src="/Img/raket.png" alt="" />
-        </div>
+          <input
+            type="image"
+            tabindex="0"
+            class="raket"
+            src="/Img/raket.png"
+            alt=""
+          />
+        </form>
       </div>
 
       <div class="höger">

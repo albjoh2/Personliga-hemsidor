@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css?family=Poppins"
       rel="stylesheet"
     />
+    <script src="script.js" defer></script>
   </head>
 
   <body>
@@ -35,14 +36,25 @@
           En bra hemsida ska vara din bästa säljare, den arbetar dygnet runt och
           gör exakt det du ber den om.
         </p>
-        <div class="inputcontainer">
+        <form
+          class="inputcontainer"
+          name="contact"
+          method="POST"
+          data-netlify="true"
+        >
           <input
             type="text"
             class="kontaktardig"
             placeholder="mobilnummer eller mailadress..."
           />
-          <img tabindex="0" class="raket" src="/Img/raket.png" alt="" />
-        </div>
+          <input
+            type="image"
+            tabindex="0"
+            class="raket"
+            src="/Img/raket.png"
+            alt=""
+          />
+        </form>
       </div>
 
       <div class="höger">
