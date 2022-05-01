@@ -1,0 +1,250 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins';
+  background-color: #212228;
+  overflow: hidden;
+}
+
+/* Styling header */
+header {
+  height: 10vh;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+nav {
+  height: 8vh;
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2vh;
+  padding-bottom: 10px;
+  font-size: 10px;
+  position: relative;
+  margin: auto;
+}
+
+.logga {
+  min-width: auto;
+  min-height: auto;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+li {
+  list-style-type: none;
+  color: #ffffff;
+  padding-bottom: 2.5vh;
+  padding-top: 2.5vh;
+}
+
+.actnav {
+  -webkit-box-shadow: inset 0px -2px rgba(0, 208, 255, 0.28);
+  -moz-box-shadow: inset 0px -2px rgba(0, 208, 255, 0.28);
+  box-shadow: inset 0px -2px rgba(0, 208, 255, 0.28);
+  font-weight: 500;
+}
+
+.navlink:hover {
+  -webkit-box-shadow: inset 0px -2px rgba(0, 208, 255, 0.28);
+  -moz-box-shadow: inset 0px -2px rgba(0, 208, 255, 0.28);
+  box-shadow: inset 0px -2px rgba(0, 208, 255, 0.28);
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+
+.skiljelinje {
+  width: 80vw;
+  height: 1px;
+  z-index: 2;
+  background: rgb(174, 0, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(174, 0, 255, 0.28) 3%,
+    rgba(0, 208, 255, 0.28) 55%
+  );
+  margin: auto;
+  position: relative;
+}
+
+/* Styling body */
+
+.container {
+  width: 80vw;
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 100%;
+  color: #ffffff;
+  justify-content: center;
+  margin: auto;
+}
+
+/* Styling left side */
+
+.vänster {
+  height: 100%;
+  z-index: 2;
+}
+
+h1 {
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: 200;
+  line-height: 45px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  margin-top: 50px;
+}
+
+.sne {
+  transform: rotate(10deg);
+  position: relative;
+  margin-top: 20px;
+}
+
+p {
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 200;
+  line-height: 30px;
+  letter-spacing: 0.3em;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.bodytext {
+  margin-top: 30px;
+}
+
+.inputcontainer {
+  margin-top: 100px;
+  /* width: 70%; */
+  width: 210px;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  gap: 10px;
+}
+
+.raket {
+  height: 30px;
+  width: 55px;
+}
+.raket:hover {
+  height: 30px;
+  width: 55px;
+  cursor: pointer;
+  animation: readyfortakeof 0.5s;
+  animation-iteration-count: infinite;
+}
+.raket:focus {
+  height: 30px;
+  width: 55px;
+  cursor: pointer;
+  animation: takeof 3s linear;
+  animation-fill-mode: forwards;
+}
+.raket:active {
+  height: 30px;
+  width: 55px;
+  cursor: pointer;
+  animation: takeof 3s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes takeof {
+  0% {
+    transform: rotate(0deg);
+  }
+  70% {
+    transform: rotate(-90deg) translatey(0px);
+  }
+  100% {
+    transform: translatey(-1000px) rotate(-90deg);
+  }
+}
+
+@keyframes readyfortakeof {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-2deg);
+  }
+  20% {
+    transform: rotate(2deg);
+  }
+  30% {
+    transform: rotate(0deg);
+  }
+  40% {
+    transform: rotate(2deg);
+  }
+  50% {
+    transform: rotate(-2deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  70% {
+    transform: rotate(-2deg);
+  }
+  80% {
+    transform: rotate(2deg);
+  }
+  90% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-1deg);
+  }
+}
+
+input {
+  padding-left: 10px;
+  font-size: 10px;
+  height: 30px;
+  letter-spacing: 0.001em;
+}
+
+/* Styling right side */
+
+.höger {
+  height: 90vh;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.cirkel {
+  height: 80vw;
+  width: 80vw;
+  min-width: 500px;
+  min-height: 500px;
+  z-index: -1;
+  background-color: #1b1c20;
+  border-radius: 50%;
+  position: absolute;
+  margin-top: -1vw;
+}
+
+.illustration {
+  position: absolute;
+  width: 10em;
+  height: auto;
+  padding-top: 10em;
+  margin-left: 15vw;
+}
