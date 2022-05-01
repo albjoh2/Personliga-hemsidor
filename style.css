@@ -118,12 +118,12 @@ h1 {
 
 p {
   font-family: Poppins;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 200;
-  line-height: 30px;
-  letter-spacing: 0.3em;
+  line-height: 25px;
+  letter-spacing: 0.2em;
   text-align: left;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .bodytext {
@@ -131,7 +131,7 @@ p {
 }
 
 .inputcontainer {
-  margin-top: 100px;
+  margin-top: 50px;
   /* width: 70%; */
   width: 210px;
   display: grid;
